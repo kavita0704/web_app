@@ -1,0 +1,115 @@
+# BigInteger Implementation in C++
+
+## Overview
+
+This project implements a simple Big Integer (BigInteger) class in C++ to handle very large numbers that cannot be stored using standard data types like `int` or `long long`.
+
+Instead of relying on built-in libraries, this implementation manually performs arithmetic operations such as addition and multiplication using basic logic.
+
+---
+
+## Features
+
+* Store very large integers using `vector<int>`
+* Addition of large numbers
+* Multiplication of large numbers
+* Handles carry operations manually
+* Removes leading zeros automatically
+* Easy-to-understand and beginner-friendly code
+
+---
+
+## How It Works
+
+* Each number is stored as digits in reverse order
+  Example: `"12345"` → `[5, 4, 3, 2, 1]`
+
+This makes arithmetic operations easier, similar to how calculations are done manually.
+
+### Addition Logic
+
+* Add digits one by one
+* Handle carry
+* Store result
+
+### Multiplication Logic
+
+* Multiply each digit of first number with second
+* Store intermediate results
+* Handle carry properly
+
+---
+
+## Technologies Used
+
+* C++
+* STL (`vector`, `string`, `iostream`)
+
+---
+
+## How to Run
+
+### 1. Compile
+
+```bash
+g++ main.cpp -o biginteger
+```
+
+### 2. Run
+
+```bash
+./biginteger
+```
+
+---
+
+## Example Output
+
+```
+First number: 12345
+Second number: 6789
+Sum: 19134
+Product: 83810205
+```
+
+---
+
+## Project Structure
+
+```
+├── main.cpp
+├── README.md
+```
+
+---
+
+## Learning Outcome
+
+Through this project, I learned:
+
+* How large numbers are handled internally
+* Implementation of arithmetic logic from scratch
+* Use of vectors for dynamic storage
+* Handling edge cases like carry and leading zeros
+
+---
+
+## Limitations
+
+* Supports only non-negative integers
+* Limited operations (no division/subtraction yet)
+
+---
+
+## Future Improvements
+
+* Add subtraction and division
+* Support negative numbers
+* Operator overloading (+, *, etc.)
+* Optimize performance
+
+---
+
+## Conclusion
+
+This project helped me understand how numbers are processed at a lower level and improved my problem-solving skills in C++.
